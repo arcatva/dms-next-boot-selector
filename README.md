@@ -2,6 +2,10 @@
 
 A [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) plugin that lets you pick which EFI boot entry to load on the next reboot, straight from the bar or Control Center. Wraps `efibootmgr --bootnext` under the hood.
 
+| Bar pill popout | Control Center widget |
+|---|---|
+| ![Popout](./screenshots/popout.png) | ![Control Center](./screenshots/control-center.png) |
+
 ## Features
 
 - **Bar pill** — single `restart_alt` icon, tints primary when a BootNext is pending
