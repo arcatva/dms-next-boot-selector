@@ -1,0 +1,15 @@
+{
+    "id": "nextBootSelector",
+    "name": "Next Boot Selector",
+    "description": "Pick which EFI entry to boot next via efibootmgr",
+    "version": "1.0.0",
+    "author": "arcatva",
+    "type": "widget",
+    "capabilities": ["dankbar-widget", "control-center"],
+    "component": "./NextBootWidget.qml",
+    "icon": "restart_alt",
+    "settings": "./NextBootSettings.qml",
+    "requires_dms": ">=0.1.0",
+    "requires": ["efibootmgr", "sudo"],
+    "permissions": ["settings_read", "settings_write"]
+}

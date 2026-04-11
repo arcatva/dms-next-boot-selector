@@ -1,0 +1,11 @@
+# Install this file as /etc/sudoers.d/dms-efibootmgr
+# Validate first, then copy:
+#   sudo visudo -cf ~/.config/DankMaterialShell/plugins/NextBootSelector/dms-efibootmgr.sudoers
+#   sudo install -m 0440 ~/.config/DankMaterialShell/plugins/NextBootSelector/dms-efibootmgr.sudoers /etc/sudoers.d/dms-efibootmgr
+#
+# Grants the 'wheel' group passwordless access to the two efibootmgr
+# operations the NextBootSelector plugin uses. Nothing else.
+
+Cmnd_Alias DMS_EFIBOOTMGR = /usr/bin/efibootmgr --bootnext [0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f], /usr/bin/efibootmgr --delete-bootnext
+
+%wheel ALL=(root) NOPASSWD: DMS_EFIBOOTMGR
