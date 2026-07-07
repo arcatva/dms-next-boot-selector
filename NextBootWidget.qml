@@ -167,10 +167,11 @@ PluginComponent {
 
     horizontalBarPill: Component {
         Item {
-            implicitWidth: root.iconSize + Theme.spacingL
-            implicitHeight: root.iconSize
+            implicitWidth: hIcon.width
+            implicitHeight: hIcon.height
 
             DankIcon {
+                id: hIcon
                 anchors.centerIn: parent
                 name: "restart_alt"
                 size: root.iconSize
@@ -181,10 +182,11 @@ PluginComponent {
 
     verticalBarPill: Component {
         Item {
-            implicitWidth: root.iconSize
-            implicitHeight: root.iconSize + Theme.spacingL
+            implicitWidth: vIcon.width
+            implicitHeight: vIcon.height
 
             DankIcon {
+                id: vIcon
                 anchors.centerIn: parent
                 name: "restart_alt"
                 size: root.iconSize
