@@ -2,7 +2,7 @@
     "id": "nextBootSelector",
     "name": "Next Boot Selector",
     "description": "Pick which EFI entry to boot next via efibootmgr",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "arcatva",
     "type": "widget",
     "capabilities": ["dankbar-widget", "control-center"],
